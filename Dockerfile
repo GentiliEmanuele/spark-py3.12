@@ -12,7 +12,7 @@ ENV SPARK_VERSION=4.0.0
 ENV HADOOP_VERSION=3
 ENV SPARK_HOME=/opt/spark-${SPARK_VERSION}-bin-hadoop${HADOOP_VERSION}
 ENV PATH=$SPARK_HOME/bin:$PATH
-RUN pip install --no-cache-dir requests influxdb-client pyspark
+RUN pip install --no-cache-dir requests influxdb-client pyspark hdfs
 
 ENV PYSPARK_PYTHON=python3
 ENV PYSPARK_DRIVER_PYTHON=python3
